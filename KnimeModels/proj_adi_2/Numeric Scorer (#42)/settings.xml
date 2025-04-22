@@ -50,10 +50,6 @@
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="CONFIGURED"/>
-    <config key="nodecontainer_message">
-        <entry key="type" type="xstring" value="ERROR"/>
-        <entry key="message" type="xstring" value="Execute failed: Missing value in prediction column in row: Row29_Row83"/>
-    </config>
     <entry key="factory" type="xstring" value="org.knime.base.node.mine.scorer.numeric2.NumericScorer2NodeFactory"/>
     <entry key="node-name" type="xstring" value="Numeric Scorer"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>

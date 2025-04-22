@@ -309,3 +309,7 @@ java.lang.IllegalArgumentException: Missing value in prediction column in row: R
 	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
 	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
 	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-04-22 19:53:23,571 : WARN  : comm-pool-thread-4 :  : Node : Box Plot : 3:90 : The selected dimension column "minMPG" does not exist in the table
+2025-04-22 19:53:23,575 : WARN  : comm-pool-thread-4 :  : Node : Random Forest Learner (Regression) : 3:28 : 2 column(s) were ignored due to missing domain information: ["Engine", "title"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-04-22 19:53:30,082 : WARN  : comm-pool-thread-4 :  : Node : Box Plot : 3:90 : The selected dimension column "minMPG" does not exist in the table
+2025-04-22 19:53:30,083 : WARN  : comm-pool-thread-4 :  : Node : Random Forest Learner (Regression) : 3:28 : 2 column(s) were ignored due to missing domain information: ["Engine", "title"] -- change the node configuration or use a Domain Calculator node to fix it
