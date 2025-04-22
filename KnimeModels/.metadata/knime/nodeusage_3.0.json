@@ -1,0 +1,296 @@
+{
+    "version": "5.4.2.v202502121104",
+    "created": "2025-04-22 17:11",
+    "nodestats": {
+        "nodes": [
+            {
+                "id": "org.knime.base.node.io.filehandling.csv.reader.CSVTableReaderNodeFactory",
+                "nodename": "CSV Reader",
+                "nrexecs": 1,
+                "nrfails": 5,
+                "exectime": 664,
+                "nrcreated": 0,
+                "nrsettingsChanged": 2,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory",
+                "nodename": "Column Filter",
+                "nrexecs": 4,
+                "nrfails": 0,
+                "exectime": 11,
+                "nrcreated": 0,
+                "nrsettingsChanged": 0,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.valcount.ValueCounterNodeFactory",
+                "nodename": "Value Counter",
+                "nrexecs": 9,
+                "nrfails": 1,
+                "exectime": 514,
+                "nrcreated": 0,
+                "nrsettingsChanged": 0,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.stringmanipulation.multicolumn.MultiColumnStringManipulationNodeFactory",
+                "nodename": "String Manipulation (Multi Column)",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 850,
+                "nrcreated": 0,
+                "nrsettingsChanged": 0,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeFactory",
+                "nodename": "String Manipulation",
+                "nrexecs": 8,
+                "nrfails": 0,
+                "exectime": 971,
+                "nrcreated": 0,
+                "nrsettingsChanged": 0,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.stats.viz.extended.ExtendedStatisticsNodeFactory",
+                "nodename": "Statistics",
+                "nrexecs": 4,
+                "nrfails": 0,
+                "exectime": 9487,
+                "nrcreated": 0,
+                "nrsettingsChanged": 0,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.stats.correlation.rank2.RankCorrelationCompute2NodeFactory",
+                "nodename": "Rank Correlation",
+                "nrexecs": 3,
+                "nrfails": 0,
+                "exectime": 3511,
+                "nrcreated": 0,
+                "nrsettingsChanged": 0,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.rules.engine.RuleEngineNodeFactory",
+                "nodename": "Rule Engine",
+                "nrexecs": 2,
+                "nrfails": 0,
+                "exectime": 69,
+                "nrcreated": 1,
+                "nrsettingsChanged": 1,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.colconvert.stringtonumber2.StringToNumber2NodeFactory",
+                "nodename": "String to Number",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 44,
+                "nrcreated": 0,
+                "nrsettingsChanged": 0,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.ext.jep.JEPNodeFactory",
+                "nodename": "Math Formula",
+                "nrexecs": 4,
+                "nrfails": 0,
+                "exectime": 365,
+                "nrcreated": 0,
+                "nrsettingsChanged": 0,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.pmml.missingval.compute.MissingValueHandlerNodeFactory",
+                "nodename": "Missing Value",
+                "nrexecs": 2,
+                "nrfails": 0,
+                "exectime": 581,
+                "nrcreated": 1,
+                "nrsettingsChanged": 0,
+                "successor": "org.knime.base.node.preproc.joiner3.Joiner3NodeFactory",
+                "successornodename": "Joiner"
+            },
+            {
+                "id": "org.knime.base.node.preproc.partition.PartitionNodeFactory",
+                "nodename": "Partitioning",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 142,
+                "nrcreated": 0,
+                "nrsettingsChanged": 0,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.mine.regression.linear2.learner.LinReg2LearnerNodeFactory2",
+                "nodename": "Linear Regression Learner",
+                "nrexecs": 1,
+                "nrfails": 2,
+                "exectime": 539,
+                "nrcreated": 0,
+                "nrsettingsChanged": 2,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.views.node.boxplot.BoxPlotNodeFactory",
+                "nodename": "Box Plot",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 2054,
+                "nrcreated": 0,
+                "nrsettingsChanged": 0,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.dynamic.js.v30.DynamicJSNodeFactory#Pie/Donut Chart (JavaScript)",
+                "nodename": "Pie/Donut Chart (JavaScript)",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 4691,
+                "nrcreated": 0,
+                "nrsettingsChanged": 0,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.mine.treeensemble2.node.regressiontree.learner.RegressionTreeLearnerNodeFactory",
+                "nodename": "Simple Regression Tree Learner",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 7253,
+                "nrcreated": 0,
+                "nrsettingsChanged": 0,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.mine.treeensemble2.node.regressiontree.predictor.RegressionTreePredictorNodeFactory",
+                "nodename": "Simple Regression Tree Predictor",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 1042,
+                "nrcreated": 0,
+                "nrsettingsChanged": 0,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.mine.scorer.numeric2.NumericScorer2NodeFactory",
+                "nodename": "Numeric Scorer",
+                "nrexecs": 2,
+                "nrfails": 1,
+                "exectime": 89,
+                "nrcreated": 0,
+                "nrsettingsChanged": 0,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.mine.treeensemble2.node.randomforest.learner.regression.RandomForestRegressionLearnerNodeFactory",
+                "nodename": "Random Forest Learner (Regression)",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 12520,
+                "nrcreated": 0,
+                "nrsettingsChanged": 0,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.mine.treeensemble2.node.randomforest.predictor.regression.RandomForestRegressionPredictorNodeFactory",
+                "nodename": "Random Forest Predictor (Regression)",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 2004,
+                "nrcreated": 0,
+                "nrsettingsChanged": 0,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.mine.regression.predict3.RegressionPredictorNodeFactory2",
+                "nodename": "Regression Predictor",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 71,
+                "nrcreated": 0,
+                "nrsettingsChanged": 0,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.groupby.GroupByNodeFactory",
+                "nodename": "GroupBy",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 143,
+                "nrcreated": 1,
+                "nrsettingsChanged": 2,
+                "successor": "org.knime.base.node.preproc.joiner3.Joiner3NodeFactory",
+                "successornodename": "Joiner"
+            },
+            {
+                "id": "org.knime.base.node.preproc.joiner3.Joiner3NodeFactory",
+                "nodename": "Joiner",
+                "nrexecs": 2,
+                "nrfails": 0,
+                "exectime": 91,
+                "nrcreated": 1,
+                "nrsettingsChanged": 2,
+                "successor": "org.knime.base.node.preproc.pmml.missingval.compute.MissingValueHandlerNodeFactory",
+                "successornodename": "Missing Value"
+            },
+            {
+                "id": "org.knime.expressions.base.node.formulas.FormulasNodeFactory",
+                "nodename": "Column Expressions (legacy)",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 1,
+                "nrsettingsChanged": 0,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            }
+        ],
+        "metaNodes": {
+        },
+        "wrappedNodes": {
+        },
+        "createdVia": {
+            "WEB_UI": 5,
+            "WEB_UI_QUICK_INSERTION_RECOMMENDED": 5
+        }
+    },
+    "uptime": 845963,
+    "workflowsOpened": 2,
+    "remoteWorkflowsOpened": 0,
+    "workflowsCreated": 0,
+    "remoteWorkflowsCreated": 0,
+    "columnarStorageWorkflowsOpened": 0,
+    "workflowsImported": 2,
+    "workflowsExported": 0,
+    "webUIPerspectiveSwitches": 0,
+    "javaUIPerspectiveSwitches": 0,
+    "lastUsedPerspective": "none",
+    "launches": 2,
+    "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
+    "timeSinceLastStart": 283214,
+    "crashes": 0,
+    "properlyShutDown": false
+}

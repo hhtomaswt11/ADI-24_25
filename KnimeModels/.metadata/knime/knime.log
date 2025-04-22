@@ -1,0 +1,311 @@
+2025-04-22 18:14:35,797 : WARN  : ModalContext :  : Node : Excel Reader : 3:104 : Please specify a file
+2025-04-22 18:14:35,799 : WARN  : ModalContext :  : Node : Excel Reader : 3:104 : Please specify a file
+2025-04-22 18:14:35,856 : WARN  : ModalContext :  : Node : Random Forest Learner (Regression) : 3:46 : 7 column(s) were ignored due to missing domain information: ["Exterior color", "Interior color", "Engine", "VIN", ...] -- change the node configuration or use a Domain Calculator node to fix it
+2025-04-22 18:14:35,862 : WARN  : ModalContext :  : Node : Linear Regression Learner : 3:48 : Columns "Exterior color", "Interior color", "Engine", "VIN", "Stock #",  ... <2 more> have too many different values - will be ignored during training
+2025-04-22 18:14:35,879 : WARN  : ModalContext :  : Node : Box Plot : 3:90 : The selected dimension column "minMPG" does not exist in the table
+2025-04-22 18:14:35,884 : WARN  : ModalContext :  : Node : Random Forest Learner (Regression) : 3:28 : 2 column(s) were ignored due to missing domain information: ["Engine", "title"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-04-22 18:16:23,884 : ERROR : KNIME-Worker-2-CSV Reader 3:56 :  : Node : CSV Reader : 3:56 : Execute failed: The specified file /home/tomas/Transferências/archive(10)/cars_data.csv does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file /home/tomas/Transferências/archive(10)/cars_data.csv does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:273)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:223)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getRootPath(AbstractFileChooserPathAccessor.java:318)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getFSPaths(AbstractFileChooserPathAccessor.java:225)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-04-22 18:16:23,884 : ERROR : KNIME-Worker-1-CSV Reader 3:4 :  : Node : CSV Reader : 3:4 : Execute failed: The specified file /home/tomas/Transferências/archive(10)/cars_data.csv does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file /home/tomas/Transferências/archive(10)/cars_data.csv does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:273)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:223)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getRootPath(AbstractFileChooserPathAccessor.java:318)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getFSPaths(AbstractFileChooserPathAccessor.java:225)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-04-22 18:17:41,418 : ERROR : KNIME-Worker-2-CSV Reader 3:4 :  : Node : CSV Reader : 3:4 : Execute failed: The specified file /home/tomas/Transferências/archive(10)/cars_data.csv does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file /home/tomas/Transferências/archive(10)/cars_data.csv does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:273)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:223)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getRootPath(AbstractFileChooserPathAccessor.java:318)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getFSPaths(AbstractFileChooserPathAccessor.java:225)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-04-22 18:17:41,420 : ERROR : KNIME-Worker-1-CSV Reader 3:56 :  : Node : CSV Reader : 3:56 : Execute failed: The specified file /home/tomas/Transferências/archive(10)/cars_data.csv does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file /home/tomas/Transferências/archive(10)/cars_data.csv does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:273)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:223)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getRootPath(AbstractFileChooserPathAccessor.java:318)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getFSPaths(AbstractFileChooserPathAccessor.java:225)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-04-22 18:18:11,770 : WARN  : main :  : Node : Box Plot : 3:90 : The selected dimension column "minMPG" does not exist in the table
+2025-04-22 18:18:11,773 : WARN  : main :  : Node : Random Forest Learner (Regression) : 3:28 : 4 column(s) were ignored due to missing domain information: ["Drivetrain", "Fuel type", "Engine", "title"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-04-22 18:18:12,548 : WARN  : main :  : Node : Box Plot : 3:90 : The selected dimension column "minMPG" does not exist in the table
+2025-04-22 18:18:12,552 : WARN  : main :  : Node : Random Forest Learner (Regression) : 3:28 : 4 column(s) were ignored due to missing domain information: ["Drivetrain", "Fuel type", "Engine", "title"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-04-22 18:18:17,469 : ERROR : KNIME-Worker-2-CSV Reader 3:56 :  : Node : CSV Reader : 3:56 : Execute failed: The specified file /home/tomas/Transferências/archive(10)/cars_data.csv does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file /home/tomas/Transferências/archive(10)/cars_data.csv does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:273)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:223)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getRootPath(AbstractFileChooserPathAccessor.java:318)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getFSPaths(AbstractFileChooserPathAccessor.java:225)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-04-22 18:18:17,685 : WARN  : KNIME-Worker-2-Rank Correlation 3:7 :  : Node : Rank Correlation : 3:7 : Rows containing missing values are filtered. Please resolve them with the Missing Value node.
+2025-04-22 18:18:17,787 : WARN  : KNIME-Worker-5-String Manipulation (Multi Column) 3:14 :  : MultiColumnStringManipulationConfigurator : String Manipulation (Multi Column) : 3:14 : Evaluation of expression failed for row "Row0": java.lang.NullPointerException: Cannot invoke "String.length()" because "<parameter1>" is null
+2025-04-22 18:18:18,377 : WARN  : KNIME-Worker-4-String Manipulation 3:32 :  : ColumnCalculator : String Manipulation : 3:32 : Row "Row32" contains missing value in column "Fuel type" - returning missing (omitting further warnings)
+2025-04-22 18:18:18,512 : WARN  : KNIME-Worker-6-String Manipulation 3:100 :  : ColumnCalculator : String Manipulation : 3:100 : Row "Row32" contains missing value in column "Fuel type" - returning missing (omitting further warnings)
+2025-04-22 18:18:18,909 : WARN  : KNIME-Worker-5-String Manipulation 3:9 :  : ColumnCalculator : String Manipulation : 3:9 : Row "Row4" contains missing value in column "Mileage" - returning missing (omitting further warnings)
+2025-04-22 18:18:19,011 : WARN  : KNIME-Worker-6-String Manipulation 3:15 :  : ColumnCalculator : String Manipulation : 3:15 : Row "Row0" contains missing value in column "MPG" - returning missing (omitting further warnings)
+2025-04-22 18:18:19,113 : WARN  : KNIME-Worker-1-String Manipulation 3:16 :  : ColumnCalculator : String Manipulation : 3:16 : Row "Row0" contains missing value in column "MPG" - returning missing (omitting further warnings)
+2025-04-22 18:18:19,415 : WARN  : KNIME-Worker-2-String Manipulation 3:86 :  : ColumnCalculator : String Manipulation : 3:86 : Row "Row211" contains missing value in column "Drivetrain" - returning missing (omitting further warnings)
+2025-04-22 18:18:19,997 : WARN  : KNIME-Worker-3-Math Formula 3:111 :  : Node : Box Plot : 3:90 : The selected dimension column "minMPG" does not exist in the table
+2025-04-22 18:18:20,017 : WARN  : KNIME-Worker-3-Math Formula 3:111 :  : Node : Random Forest Learner (Regression) : 3:28 : 2 column(s) were ignored due to missing domain information: ["Engine", "title"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-04-22 18:18:20,176 : WARN  : KNIME-Worker-1-Rank Correlation 3:20 :  : Node : Rank Correlation : 3:20 : Rows containing missing values are filtered. Please resolve them with the Missing Value node.
+2025-04-22 18:18:20,498 : WARN  : KNIME-Worker-6-Statistics 3:22 :  : Node : Statistics : 3:22 : Maximum number of unique possible values (1000) exceeds for column(s): "primaly_price","title"
+2025-04-22 18:18:20,679 : WARN  : KNIME-Worker-3-Statistics 3:23 :  : Node : Statistics : 3:23 : Maximum number of unique possible values (1000) exceeds for column(s): "primaly_price","title"
+2025-04-22 18:18:20,728 : WARN  : KNIME-Worker-4-Missing Value 3:24 :  : Node : Box Plot : 3:90 : The selected dimension column "minMPG" does not exist in the table
+2025-04-22 18:18:20,799 : ERROR : KNIME-Worker-15-Value Counter 3:83 :  : Node : Value Counter : 3:83 : Execute failed: Index -1 out of bounds for length 9
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 9
+	at org.knime.core.data.container.BlobSupportDataRow.getCell(BlobSupportDataRow.java:144)
+	at org.knime.base.node.preproc.valcount.ValueCounterNodeModel.execute(ValueCounterNodeModel.java:149)
+	at org.knime.base.node.preproc.valcount.ValueCounterNodeModel.execute(ValueCounterNodeModel.java:1)
+	at org.knime.core.webui.node.impl.WebUINodeModel.execute(WebUINodeModel.java:173)
+	at org.knime.core.webui.node.impl.WebUINodeModel.execute(WebUINodeModel.java:153)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-04-22 18:18:20,860 : WARN  : KNIME-Worker-14-Rank Correlation 3:82 :  : Node : Rank Correlation : 3:82 : Rows containing missing values are filtered. Please resolve them with the Missing Value node.
+2025-04-22 18:18:20,933 : WARN  : KNIME-Worker-11-Partitioning 3:26 :  : Node : Random Forest Learner (Regression) : 3:28 : 2 column(s) were ignored due to missing domain information: ["Engine", "title"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-04-22 18:18:20,971 : WARN  : KNIME-Worker-10-Statistics 3:25 :  : Node : Statistics : 3:25 : Maximum number of unique possible values (1000) exceeds for column(s): "primaly_price","title"
+2025-04-22 18:18:21,145 : WARN  : KNIME-Worker-15-Linear Regression Learner 3:40 :  : LinReg2Learner : Linear Regression Learner : 3:40 : Columns "Engine", "title" have too many different values - will be ignored during training
+2025-04-22 18:18:21,205 : ERROR : KNIME-Worker-15-Linear Regression Learner 3:40 :  : Node : Linear Regression Learner : 3:40 : Execute failed: Missing value support disabled, see node configuration dialog.
+java.lang.IllegalStateException: Missing value support disabled, see node configuration dialog.
+	at org.knime.base.node.mine.regression.RegressionTrainingRow$MissingHandling.isMissing(RegressionTrainingRow.java:93)
+	at org.knime.base.node.mine.regression.RegressionTrainingRow.<init>(RegressionTrainingRow.java:184)
+	at org.knime.base.node.mine.regression.RegressionTrainingDataIterator.next(RegressionTrainingDataIterator.java:138)
+	at org.knime.base.node.mine.regression.RegressionTrainingDataIterator.next(RegressionTrainingDataIterator.java:1)
+	at org.knime.base.node.mine.regression.linear2.learner.Learner.processTable(Learner.java:176)
+	at org.knime.base.node.mine.regression.linear2.learner.Learner.perform(Learner.java:114)
+	at org.knime.base.node.mine.regression.linear2.learner.LinReg2Learner.execute(LinReg2Learner.java:150)
+	at org.knime.base.node.mine.regression.linear2.learner.LinReg2LearnerNodeModel.execute(LinReg2LearnerNodeModel.java:169)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-04-22 18:18:33,544 : WARN  : KNIME-Worker-5-Random Forest Learner (Regression) 3:28 :  : Node : Random Forest Learner (Regression) : 3:28 : 2 column(s) were ignored due to missing domain information: ["Engine", "title"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-04-22 18:18:58,301 : WARN  : KNIME-Worker-3-Linear Regression Learner 3:40 :  : LinReg2Learner : Linear Regression Learner : 3:40 : Columns "Engine", "title" have too many different values - will be ignored during training
+2025-04-22 18:18:58,303 : ERROR : KNIME-Worker-3-Linear Regression Learner 3:40 :  : Node : Linear Regression Learner : 3:40 : Execute failed: Missing value support disabled, see node configuration dialog.
+java.lang.IllegalStateException: Missing value support disabled, see node configuration dialog.
+	at org.knime.base.node.mine.regression.RegressionTrainingRow$MissingHandling.isMissing(RegressionTrainingRow.java:93)
+	at org.knime.base.node.mine.regression.RegressionTrainingRow.<init>(RegressionTrainingRow.java:184)
+	at org.knime.base.node.mine.regression.RegressionTrainingDataIterator.next(RegressionTrainingDataIterator.java:138)
+	at org.knime.base.node.mine.regression.RegressionTrainingDataIterator.next(RegressionTrainingDataIterator.java:1)
+	at org.knime.base.node.mine.regression.linear2.learner.Learner.processTable(Learner.java:176)
+	at org.knime.base.node.mine.regression.linear2.learner.Learner.perform(Learner.java:114)
+	at org.knime.base.node.mine.regression.linear2.learner.LinReg2Learner.execute(LinReg2Learner.java:150)
+	at org.knime.base.node.mine.regression.linear2.learner.LinReg2LearnerNodeModel.execute(LinReg2LearnerNodeModel.java:169)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-04-22 18:19:12,845 : WARN  : KNIME-Worker-16-Linear Regression Learner 3:40 :  : LinReg2Learner : Linear Regression Learner : 3:40 : Columns "Engine", "title" have too many different values - will be ignored during training
+2025-04-22 18:19:12,969 : WARN  : KNIME-Worker-16-Linear Regression Learner 3:40 :  : Node : Linear Regression Learner : 3:40 : Columns "Engine", "title" have too many different values - will be ignored during training
+2025-04-22 18:19:13,194 : ERROR : KNIME-Worker-11-Numeric Scorer 3:42 :  : Node : Numeric Scorer : 3:42 : Execute failed: Missing value in prediction column in row: Row37
+java.lang.IllegalArgumentException: Missing value in prediction column in row: Row37
+	at org.knime.base.node.mine.scorer.numeric2.NumericScorer2NodeModel.execute(NumericScorer2NodeModel.java:164)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:820)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-04-22 18:24:49,040 : WARN  : comm-pool-thread-7 :  : Node : GroupBy : 3:112 : No grouping column included. Aggregate complete table.
+2025-04-22 18:24:49,040 : WARN  : comm-pool-thread-7 :  : Node : GroupBy : 3:112 : No aggregation column defined
+2025-04-22 18:24:49,040 : WARN  : comm-pool-thread-7 :  : Node : GroupBy : 3:112 : Please select at least one group or aggregation column
+2025-04-22 18:31:23,809 : WARN  : KNIME-Worker-20-Joiner 3:113 :  : Node : Joiner : 3:113 : Node created an empty data table.
+2025-04-22 19:43:46,956 : WARN  : ModalContext :  : Node : CSV Reader : 3:56 : Execute failed: The specified file /home/tomas/Transferências/archive(10)/cars_data.csv does not exist.
+2025-04-22 19:43:47,052 : WARN  : ModalContext :  : Node : Excel Reader : 3:104 : Please specify a file
+2025-04-22 19:43:47,058 : WARN  : ModalContext :  : Node : Excel Reader : 3:104 : Please specify a file
+2025-04-22 19:43:47,298 : WARN  : ModalContext :  : Node : Rank Correlation : 3:7 : Rows containing missing values are filtered. Please resolve them with the Missing Value node.
+2025-04-22 19:43:47,744 : WARN  : ModalContext :  : Node : Statistics : 3:22 : Maximum number of unique possible values (1000) exceeds for column(s): "primaly_price","title"
+2025-04-22 19:43:47,921 : WARN  : ModalContext :  : Node : Rank Correlation : 3:20 : Rows containing missing values are filtered. Please resolve them with the Missing Value node.
+2025-04-22 19:43:48,012 : WARN  : ModalContext :  : Node : Statistics : 3:23 : Maximum number of unique possible values (1000) exceeds for column(s): "primaly_price","title"
+2025-04-22 19:43:48,320 : WARN  : ModalContext :  : Node : Statistics : 3:25 : Maximum number of unique possible values (1000) exceeds for column(s): "primaly_price","title"
+2025-04-22 19:43:48,619 : WARN  : ModalContext :  : Node : Rank Correlation : 3:82 : Rows containing missing values are filtered. Please resolve them with the Missing Value node.
+2025-04-22 19:43:48,624 : WARN  : ModalContext :  : Node : Value Counter : 3:83 : Execute failed: Index -1 out of bounds for length 9
+2025-04-22 19:43:49,205 : WARN  : ModalContext :  : Node : Random Forest Learner (Regression) : 3:28 : 2 column(s) were ignored due to missing domain information: ["Engine", "title"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-04-22 19:43:49,243 : WARN  : ModalContext :  : Node : Linear Regression Learner : 3:40 : Columns "Engine", "title" have too many different values - will be ignored during training
+2025-04-22 19:43:50,009 : WARN  : ModalContext :  : Node : Numeric Scorer : 3:42 : Execute failed: Missing value in prediction column in row: Row37
+2025-04-22 19:45:13,485 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:116 valid [3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:17, 3:18, 3:19, 3:20, 3:21, 3:22, 3:23, 3:24, 3:25, 3:26, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:37, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46, 3:47, 3:48, 3:49, 3:50, 3:51, 3:52, 3:53, 3:54, 3:55, 3:56, 3:57, 3:59, 3:60, 3:61, 3:62, 3:63, 3:64, 3:65, 3:66, 3:67, 3:68, 3:69, 3:70, 3:71, 3:72, 3:73, 3:74, 3:75, 3:76, 3:77, 3:78, 3:79, 3:80, 3:81, 3:82, 3:83, 3:85, 3:86, 3:87, 3:88, 3:89, 3:90, 3:91, 3:92, 3:93, 3:94, 3:96, 3:97, 3:98, 3:99, 3:100, 3:101, 3:102, 3:103, 3:104, 3:105, 3:106, 3:107, 3:108, 3:109, 3:110, 3:111, 3:112, 3:113, 3:114, 3:115] (source: http://org.knime.ui.java/assets/index-CPG1Nwkw.js; line: 87)
+2025-04-22 19:45:13,490 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CPG1Nwkw.js; line: 87)
+2025-04-22 19:45:13,491 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:116 valid [3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:17, 3:18, 3:19, 3:20, 3:21, 3:22, 3:23, 3:24, 3:25, 3:26, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:37, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46, 3:47, 3:48, 3:49, 3:50, 3:51, 3:52, 3:53, 3:54, 3:55, 3:56, 3:57, 3:59, 3:60, 3:61, 3:62, 3:63, 3:64, 3:65, 3:66, 3:67, 3:68, 3:69, 3:70, 3:71, 3:72, 3:73, 3:74, 3:75, 3:76, 3:77, 3:78, 3:79, 3:80, 3:81, 3:82, 3:83, 3:85, 3:86, 3:87, 3:88, 3:89, 3:90, 3:91, 3:92, 3:93, 3:94, 3:96, 3:97, 3:98, 3:99, 3:100, 3:101, 3:102, 3:103, 3:104, 3:105, 3:106, 3:107, 3:108, 3:109, 3:110, 3:111, 3:112, 3:113, 3:114, 3:115] (source: http://org.knime.ui.java/assets/index-CPG1Nwkw.js; line: 45)
+2025-04-22 19:51:18,498 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:116 valid [3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:17, 3:18, 3:19, 3:20, 3:21, 3:22, 3:23, 3:24, 3:25, 3:26, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:37, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46, 3:47, 3:48, 3:49, 3:50, 3:51, 3:52, 3:53, 3:54, 3:55, 3:56, 3:57, 3:59, 3:60, 3:61, 3:62, 3:63, 3:64, 3:65, 3:66, 3:67, 3:68, 3:69, 3:70, 3:71, 3:72, 3:73, 3:74, 3:75, 3:76, 3:77, 3:78, 3:79, 3:80, 3:81, 3:82, 3:83, 3:85, 3:86, 3:87, 3:88, 3:89, 3:90, 3:91, 3:92, 3:93, 3:94, 3:96, 3:97, 3:98, 3:99, 3:100, 3:101, 3:102, 3:103, 3:104, 3:105, 3:106, 3:107, 3:108, 3:109, 3:110, 3:111, 3:112, 3:113, 3:114, 3:115] (source: http://org.knime.ui.java/assets/index-CPG1Nwkw.js; line: 87)
+2025-04-22 19:51:18,501 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CPG1Nwkw.js; line: 87)
+2025-04-22 19:51:18,505 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:116 valid [3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:17, 3:18, 3:19, 3:20, 3:21, 3:22, 3:23, 3:24, 3:25, 3:26, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:37, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46, 3:47, 3:48, 3:49, 3:50, 3:51, 3:52, 3:53, 3:54, 3:55, 3:56, 3:57, 3:59, 3:60, 3:61, 3:62, 3:63, 3:64, 3:65, 3:66, 3:67, 3:68, 3:69, 3:70, 3:71, 3:72, 3:73, 3:74, 3:75, 3:76, 3:77, 3:78, 3:79, 3:80, 3:81, 3:82, 3:83, 3:85, 3:86, 3:87, 3:88, 3:89, 3:90, 3:91, 3:92, 3:93, 3:94, 3:96, 3:97, 3:98, 3:99, 3:100, 3:101, 3:102, 3:103, 3:104, 3:105, 3:106, 3:107, 3:108, 3:109, 3:110, 3:111, 3:112, 3:113, 3:114, 3:115] (source: http://org.knime.ui.java/assets/index-CPG1Nwkw.js; line: 45)
+2025-04-22 19:51:22,066 : WARN  : comm-pool-thread-3 :  : Node : Box Plot : 3:90 : The selected dimension column "minMPG" does not exist in the table
+2025-04-22 19:51:22,071 : WARN  : comm-pool-thread-3 :  : Node : Random Forest Learner (Regression) : 3:28 : 2 column(s) were ignored due to missing domain information: ["Engine", "title"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-04-22 19:51:24,404 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:115 valid [3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:17, 3:18, 3:19, 3:20, 3:21, 3:22, 3:23, 3:24, 3:25, 3:26, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:37, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46, 3:47, 3:48, 3:49, 3:50, 3:51, 3:52, 3:53, 3:54, 3:55, 3:56, 3:57, 3:59, 3:60, 3:61, 3:62, 3:63, 3:64, 3:65, 3:66, 3:67, 3:68, 3:69, 3:70, 3:71, 3:72, 3:73, 3:74, 3:75, 3:76, 3:77, 3:78, 3:79, 3:80, 3:81, 3:82, 3:83, 3:85, 3:86, 3:87, 3:88, 3:89, 3:90, 3:91, 3:92, 3:93, 3:94, 3:96, 3:97, 3:98, 3:99, 3:100, 3:101, 3:102, 3:103, 3:104, 3:105, 3:106, 3:107, 3:108, 3:109, 3:110, 3:111, 3:112, 3:113, 3:114] (source: http://org.knime.ui.java/assets/index-CPG1Nwkw.js; line: 87)
+2025-04-22 19:51:24,406 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CPG1Nwkw.js; line: 87)
+2025-04-22 19:51:24,407 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:115 valid [3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:17, 3:18, 3:19, 3:20, 3:21, 3:22, 3:23, 3:24, 3:25, 3:26, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:37, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46, 3:47, 3:48, 3:49, 3:50, 3:51, 3:52, 3:53, 3:54, 3:55, 3:56, 3:57, 3:59, 3:60, 3:61, 3:62, 3:63, 3:64, 3:65, 3:66, 3:67, 3:68, 3:69, 3:70, 3:71, 3:72, 3:73, 3:74, 3:75, 3:76, 3:77, 3:78, 3:79, 3:80, 3:81, 3:82, 3:83, 3:85, 3:86, 3:87, 3:88, 3:89, 3:90, 3:91, 3:92, 3:93, 3:94, 3:96, 3:97, 3:98, 3:99, 3:100, 3:101, 3:102, 3:103, 3:104, 3:105, 3:106, 3:107, 3:108, 3:109, 3:110, 3:111, 3:112, 3:113, 3:114] (source: http://org.knime.ui.java/assets/index-CPG1Nwkw.js; line: 45)
+2025-04-22 19:51:28,163 : WARN  : KNIME-Worker-2-Missing Value 3:24 :  : Node : Box Plot : 3:90 : The selected dimension column "minMPG" does not exist in the table
+2025-04-22 19:51:32,308 : WARN  : KNIME-Worker-2-Partitioning 3:26 :  : Node : Random Forest Learner (Regression) : 3:28 : 2 column(s) were ignored due to missing domain information: ["Engine", "title"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-04-22 19:51:39,082 : WARN  : KNIME-Worker-3-Random Forest Learner (Regression) 3:28 :  : Node : Random Forest Learner (Regression) : 3:28 : 2 column(s) were ignored due to missing domain information: ["Engine", "title"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-04-22 19:51:54,881 : WARN  : KNIME-Worker-16-Linear Regression Learner 3:40 :  : LinReg2Learner : Linear Regression Learner : 3:40 : Columns "Engine", "title" have too many different values - will be ignored during training
+2025-04-22 19:51:55,062 : WARN  : KNIME-Worker-16-Linear Regression Learner 3:40 :  : Node : Linear Regression Learner : 3:40 : Columns "Engine", "title" have too many different values - will be ignored during training
+2025-04-22 19:51:55,327 : ERROR : KNIME-Worker-14-Numeric Scorer 3:42 :  : Node : Numeric Scorer : 3:42 : Execute failed: Missing value in prediction column in row: Row29_Row83
+java.lang.IllegalArgumentException: Missing value in prediction column in row: Row29_Row83
+	at org.knime.base.node.mine.scorer.numeric2.NumericScorer2NodeModel.execute(NumericScorer2NodeModel.java:164)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:820)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)

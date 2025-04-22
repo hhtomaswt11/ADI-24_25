@@ -1,0 +1,22 @@
+{
+  "version" : "5.4.2.v202502121104",
+  "projects" : [ {
+    "name" : "proj_adi_2",
+    "active" : true,
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "relativePath" : "proj_adi_2"
+    }
+  } ],
+  "mostRecentlyUsedProjects" : [ {
+    "name" : "proj_adi_2",
+    "timeUsed" : "2025-04-22T18:14:36.135363472+01:00",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "proj_adi_2"
+    }
+  } ]
+}
