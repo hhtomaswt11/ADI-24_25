@@ -10,7 +10,7 @@
                 "nrfails": 5,
                 "exectime": 785,
                 "nrcreated": 0,
-                "nrsettingsChanged": 6,
+                "nrsettingsChanged": 7,
                 "successor": "n/a",
                 "successornodename": "n/a"
             },
@@ -360,20 +360,20 @@
             "WEB_UI_QUICK_INSERTION_RECOMMENDED": 11
         }
     },
-    "uptime": 1203788,
-    "workflowsOpened": 7,
+    "uptime": 971212,
+    "workflowsOpened": 11,
     "remoteWorkflowsOpened": 0,
     "workflowsCreated": 0,
     "remoteWorkflowsCreated": 0,
     "columnarStorageWorkflowsOpened": 0,
-    "workflowsImported": 7,
-    "workflowsExported": 1,
+    "workflowsImported": 9,
+    "workflowsExported": 2,
     "webUIPerspectiveSwitches": 0,
     "javaUIPerspectiveSwitches": 0,
     "lastUsedPerspective": "none",
-    "launches": 3,
+    "launches": 4,
     "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
-    "timeSinceLastStart": 1531653,
+    "timeSinceLastStart": 273487,
     "crashes": 0,
-    "properlyShutDown": true
+    "properlyShutDown": false
 }
