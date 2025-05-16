@@ -313,3 +313,243 @@ java.lang.IllegalArgumentException: Missing value in prediction column in row: R
 2025-04-22 19:53:23,575 : WARN  : comm-pool-thread-4 :  : Node : Random Forest Learner (Regression) : 3:28 : 2 column(s) were ignored due to missing domain information: ["Engine", "title"] -- change the node configuration or use a Domain Calculator node to fix it
 2025-04-22 19:53:30,082 : WARN  : comm-pool-thread-4 :  : Node : Box Plot : 3:90 : The selected dimension column "minMPG" does not exist in the table
 2025-04-22 19:53:30,083 : WARN  : comm-pool-thread-4 :  : Node : Random Forest Learner (Regression) : 3:28 : 2 column(s) were ignored due to missing domain information: ["Engine", "title"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-05-16 10:47:42,855 : WARN  : Thread-1772 :  : OAuthAuthenticator :  :  : Could not stop OAuth redirect listener: null
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(Unknown Source)
+	at java.base/java.util.concurrent.CountDownLatch.await(Unknown Source)
+	at org.eclipse.jetty.io.ManagedSelector.doStop(ManagedSelector.java:137)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:132)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:182)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:205)
+	at org.eclipse.jetty.io.SelectorManager.doStop(SelectorManager.java:280)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:132)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:182)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:205)
+	at org.eclipse.jetty.server.AbstractConnector.doStop(AbstractConnector.java:375)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStop(AbstractNetworkConnector.java:82)
+	at org.eclipse.jetty.server.ServerConnector.doStop(ServerConnector.java:241)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:132)
+	at org.eclipse.jetty.server.Server.doStop(Server.java:658)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:132)
+	at com.knime.explorer.server.rest.OAuthAuthenticator.stopServer(OAuthAuthenticator.java:733)
+	at com.knime.explorer.server.rest.OAuthAuthenticator.login(OAuthAuthenticator.java:599)
+	at com.knime.explorer.server.rest.OAuthLoginDialog.lambda$0(OAuthLoginDialog.java:179)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-05-16 10:48:07,774 : WARN  : ModalContext :  : Node : Excel Reader : 4:104 : Please specify a file
+2025-05-16 10:48:07,777 : WARN  : ModalContext :  : Node : Excel Reader : 4:104 : Please specify a file
+2025-05-16 10:48:07,808 : WARN  : ModalContext :  : Node : Random Forest Learner (Regression) : 4:46 : 7 column(s) were ignored due to missing domain information: ["Exterior color", "Interior color", "Engine", "VIN", ...] -- change the node configuration or use a Domain Calculator node to fix it
+2025-05-16 10:48:07,813 : WARN  : ModalContext :  : Node : Linear Regression Learner : 4:48 : Columns "Exterior color", "Interior color", "Engine", "VIN", "Stock #",  ... <2 more> have too many different values - will be ignored during training
+2025-05-16 10:48:07,827 : WARN  : ModalContext :  : Node : Box Plot : 4:90 : The selected dimension column "minMPG" does not exist in the table
+2025-05-16 10:48:07,832 : WARN  : ModalContext :  : Node : Random Forest Learner (Regression) : 4:28 : 2 column(s) were ignored due to missing domain information: ["Engine", "title"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-05-16 10:48:58,246 : WARN  : ModalContext :  : Node : Column Expressions (legacy) : 5:171 : An error occurred in script 1:
+Type error: 'null' has no such function 'replaceAll' (line 2):
+column("Doctor").replaceAll("(?i)\\s*(PhD|MD|DDS)\\s*$", "").trim();
+An error occurred in script 2:
+Type error: 'null' has no such function 'replaceAll' (line 2):
+match = column("Doctor").replaceAll(".*(?i)\\b(PhD|MD|DDS)\\b.*", "$1");
+2025-05-16 10:48:59,158 : WARN  : ModalContext :  : Node : Column Expressions (legacy) : 5:169 : An error occurred in script 1:
+Type error: 'null' has no such function 'replaceAll' (line 2):
+column("Doctor").replaceAll("(?i)\\s*(PhD|MD|DDS)\\s*$", "").trim();
+An error occurred in script 2:
+Type error: 'null' has no such function 'replaceAll' (line 2):
+match = column("Doctor").replaceAll(".*(?i)\\b(PhD|MD|DDS)\\b.*", "$1");
+2025-05-16 10:48:59,385 : WARN  : ModalContext :  : Node : Decision Tree Predictor : 5:160 : Internal model could not be loaded.
+2025-05-16 10:50:13,969 : WARN  : main :  : Node : Box Plot : 4:90 : The selected dimension column "minMPG" does not exist in the table
+2025-05-16 10:50:13,971 : WARN  : main :  : Node : Random Forest Learner (Regression) : 4:28 : 4 column(s) were ignored due to missing domain information: ["Drivetrain", "Fuel type", "Engine", "title"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-05-16 10:50:15,275 : WARN  : main :  : Node : Box Plot : 4:90 : The selected dimension column "minMPG" does not exist in the table
+2025-05-16 10:50:15,276 : WARN  : main :  : Node : Random Forest Learner (Regression) : 4:28 : 4 column(s) were ignored due to missing domain information: ["Drivetrain", "Fuel type", "Engine", "title"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-05-16 10:51:08,597 : WARN  : ModalContext :  : Node : String Manipulation : 6:140 : Problems in 165 rows. First error: Evaluation of expression failed for row "Row66": null
+Evaluation of expression failed for row "Row66": null
+2025-05-16 10:51:08,701 : WARN  : ModalContext :  : Node : String to Number : 6:143 : Problems in 1486 rows, first error: "Ingenium 2L ..." in cell ["Row8", column "Valves", row 9] can not be transformed into a number
+ RowID  |   ..   | EngineConfig |     Valves    
+--------+--------+--------------+----------------
+ Row6   | ..     | V8           | 16            
+ Row7   | ..     | I4           | 16            
+ Row8   | ..     | I4           | Ingenium 2L...
+                                  ^^^^^^^^^^^^^^
+For input string: "Ingenium 2L I-4 gasoline direct injection, DOHC, variable valve"
+2025-05-16 10:51:08,935 : WARN  : ModalContext :  : Node : Box Plot : 6:90 : The selected dimension column "minMPG" does not exist in the table
+2025-05-16 10:51:08,936 : WARN  : ModalContext :  : Node : Box Plot : 6:90 : The selected dimension column "minMPG" does not exist in the table
+2025-05-16 10:51:08,943 : WARN  : ModalContext :  : Node : Random Forest Learner (Regression) : 6:130:28 : 1 column(s) were ignored due to missing domain information: ["Transmission"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-05-16 10:51:08,944 : WARN  : ModalContext :  : Node : Random Forest Learner (Regression) : 6:130:28 : 4 column(s) were ignored due to missing domain information: ["Drivetrain", "Fuel type", "Transmission", "EngineConfig"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-05-16 10:51:08,965 : WARN  : ModalContext :  : Node : Random Forest Learner (Regression) : 6:179:28 : 1 column(s) were ignored due to missing domain information: ["Transmission"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-05-16 10:51:08,965 : WARN  : ModalContext :  : Node : Random Forest Learner (Regression) : 6:179:28 : 4 column(s) were ignored due to missing domain information: ["Drivetrain", "Fuel type", "Transmission", "EngineConfig"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-05-16 10:52:54,536 : WARN  : ModalContext :  : Node : String Manipulation : 7:223:140 : Problems in 165 rows. First error: Evaluation of expression failed for row "Row66": null
+Evaluation of expression failed for row "Row66": null
+2025-05-16 10:52:54,624 : WARN  : ModalContext :  : Node : String to Number : 7:223:143 : Problems in 1486 rows, first error: "Ingenium 2L ..." in cell ["Row8", column "Valves", row 9] can not be transformed into a number
+ RowID  |   ..   | EngineConfig |     Valves    
+--------+--------+--------------+----------------
+ Row6   | ..     | V8           | 16            
+ Row7   | ..     | I4           | 16            
+ Row8   | ..     | I4           | Ingenium 2L...
+                                  ^^^^^^^^^^^^^^
+For input string: "Ingenium 2L I-4 gasoline direct injection, DOHC, variable valve"
+2025-05-16 10:52:54,820 : WARN  : ModalContext :  : Node : Box Plot : 7:202 : The selected dimension column "minMPG" does not exist in the table
+2025-05-16 10:52:54,820 : WARN  : ModalContext :  : Node : Box Plot : 7:202 : The selected dimension column "minMPG" does not exist in the table
+2025-05-16 10:52:54,847 : WARN  : ModalContext :  : Node : Box Plot : 7:90 : The selected dimension column "minMPG" does not exist in the table
+2025-05-16 10:52:54,871 : WARN  : ModalContext :  : Node : Random Forest Learner (Regression) : 7:179:28 : 1 column(s) were ignored due to missing domain information: ["Transmission"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-05-16 10:52:54,879 : WARN  : ModalContext :  : Node : Gradient Boosted Trees Learner (Regression) : 7:222:218 : 1 column(s) were ignored due to missing domain information: ["Transmission"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-05-16 10:52:54,895 : WARN  : ModalContext :  : Node : Random Forest Learner (Regression) : 7:130:28 : 1 column(s) were ignored due to missing domain information: ["Transmission"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-05-16 10:52:54,965 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  : Warnings during load: Status: DataLoadError: proj_adi_2121 7 loaded with error during data load
+2025-05-16 10:52:54,965 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: DataLoadError: proj_adi_2121 7
+2025-05-16 10:52:54,965 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: CSV Reader 7:4
+2025-05-16 10:52:54,965 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "CSV Reader": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/CSV Reader (#4)/port_1/data.xml
+2025-05-16 10:52:54,965 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: State has changed from EXECUTED to CONFIGURED
+2025-05-16 10:52:54,965 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Column Filter 7:6
+2025-05-16 10:52:54,966 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "Column Filter": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/Column Filter (#6)/port_1/data.xml
+2025-05-16 10:52:54,966 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: String Manipulation (Multi Column) 7:14
+2025-05-16 10:52:54,966 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "String Manipulation (Multi Column)": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/String Manipulation _Multi Column_ (#14)/port_1/data.xml
+2025-05-16 10:52:54,966 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: String Manipulation 7:32
+2025-05-16 10:52:54,966 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "String Manipulation": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/String Manipulation (#32)/port_1/data.xml
+2025-05-16 10:52:54,966 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: String Manipulation 7:100
+2025-05-16 10:52:54,966 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "String Manipulation": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/String Manipulation (#100)/port_1/data.xml
+2025-05-16 10:52:54,966 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: String Manipulation 7:8
+2025-05-16 10:52:54,966 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "String Manipulation": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/String Manipulation (#8)/port_1/data.xml
+2025-05-16 10:52:54,966 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: String Manipulation 7:9
+2025-05-16 10:52:54,967 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "String Manipulation": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/String Manipulation (#9)/port_1/data.xml
+2025-05-16 10:52:54,967 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Engine Treatment 7:223
+2025-05-16 10:52:54,967 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: String Manipulation 7:223:88
+2025-05-16 10:52:54,967 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: DataLoadError: Unable to load port content for node "String Manipulation": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/Engine Treat (#223)/String Manipulation (#88)/port_1/data.xml
+2025-05-16 10:52:54,967 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: DataLoadError: State has changed from EXECUTED to CONFIGURED
+2025-05-16 10:52:54,967 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: String Manipulation 7:223:138
+2025-05-16 10:52:54,967 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: DataLoadError: Unable to load port content for node "String Manipulation": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/Engine Treat (#223)/String Manipulation (#138)/port_1/data.xml
+2025-05-16 10:52:54,967 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: String Manipulation 7:223:140
+2025-05-16 10:52:54,967 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: DataLoadError: Unable to load port content for node "String Manipulation": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/Engine Treat (#223)/String Manipulation (#140)/port_1/data.xml
+2025-05-16 10:52:54,967 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: String Manipulation 7:223:142
+2025-05-16 10:52:54,967 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: DataLoadError: Unable to load port content for node "String Manipulation": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/Engine Treat (#223)/String Manipulation (#142)/port_1/data.xml
+2025-05-16 10:52:54,967 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: String to Number 7:223:143
+2025-05-16 10:52:54,967 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: DataLoadError: Unable to load port content for node "String to Number": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/Engine Treat (#223)/String to Number (#143)/port_1/data.xml
+2025-05-16 10:52:54,968 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: String Manipulation 7:15
+2025-05-16 10:52:54,968 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "String Manipulation": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/String Manipulation (#15)/port_1/data.xml
+2025-05-16 10:52:54,968 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: String Manipulation 7:16
+2025-05-16 10:52:54,968 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "String Manipulation": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/String Manipulation (#16)/port_1/data.xml
+2025-05-16 10:52:54,968 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Column Filter 7:109
+2025-05-16 10:52:54,968 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "Column Filter": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/Column Filter (#109)/port_1/data.xml
+2025-05-16 10:52:54,968 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: String to Number 7:184
+2025-05-16 10:52:54,968 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "String to Number": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/String to Number (#184)/port_1/data.xml
+2025-05-16 10:52:54,968 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Rule Engine 7:96
+2025-05-16 10:52:54,968 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "Rule Engine": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/Rule Engine (#96)/port_1/data.xml
+2025-05-16 10:52:54,968 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Rule Engine 7:97
+2025-05-16 10:52:54,968 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "Rule Engine": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/Rule Engine (#97)/port_1/data.xml
+2025-05-16 10:52:54,968 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Column Filter 7:107
+2025-05-16 10:52:54,968 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "Column Filter": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/Column Filter (#107)/port_1/data.xml
+2025-05-16 10:52:54,969 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: String Manipulation 7:19
+2025-05-16 10:52:54,969 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "String Manipulation": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/String Manipulation (#19)/port_1/data.xml
+2025-05-16 10:52:54,969 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: String Manipulation 7:86
+2025-05-16 10:52:54,969 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "String Manipulation": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/String Manipulation (#86)/port_1/data.xml
+2025-05-16 10:52:54,969 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: String to Number 7:17
+2025-05-16 10:52:54,969 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "String to Number": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/String to Number (#17)/port_1/data.xml
+2025-05-16 10:52:54,969 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Converting values to integer 7:127
+2025-05-16 10:52:54,969 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Math Formula 7:127:106
+2025-05-16 10:52:54,969 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: DataLoadError: Unable to load port content for node "Math Formula": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/Converting v (#127)/Math Formula (#106)/port_1/data.xml
+2025-05-16 10:52:54,969 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: DataLoadError: State has changed from EXECUTED to CONFIGURED
+2025-05-16 10:52:54,969 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Math Formula 7:127:108
+2025-05-16 10:52:54,969 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: DataLoadError: Unable to load port content for node "Math Formula": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/Converting v (#127)/Math Formula (#108)/port_1/data.xml
+2025-05-16 10:52:54,969 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Math Formula 7:127:110
+2025-05-16 10:52:54,970 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: DataLoadError: Unable to load port content for node "Math Formula": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/Converting v (#127)/Math Formula (#110)/port_1/data.xml
+2025-05-16 10:52:54,970 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Math Formula 7:127:111
+2025-05-16 10:52:54,970 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: DataLoadError: Unable to load port content for node "Math Formula": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/Converting v (#127)/Math Formula (#111)/port_1/data.xml
+2025-05-16 10:52:54,970 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Rule Engine 7:182
+2025-05-16 10:52:54,970 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "Rule Engine": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/Rule Engine (#182)/port_1/data.xml
+2025-05-16 10:52:54,970 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Rule Engine 7:187
+2025-05-16 10:52:54,970 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "Rule Engine": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/Rule Engine (#187)/port_1/data.xml
+2025-05-16 10:52:54,970 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Rule-based Row Filter 7:186
+2025-05-16 10:52:54,970 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "Rule-based Row Filter": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/Rule_based Row Filter (#186)/port_1/data.xml
+2025-05-16 10:52:54,970 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Rule Engine 7:188
+2025-05-16 10:52:54,970 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "Rule Engine": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/Rule Engine (#188)/port_1/data.xml
+2025-05-16 10:52:54,970 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Rule Engine 7:190
+2025-05-16 10:52:54,970 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "Rule Engine": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/Rule Engine (#190)/port_1/data.xml
+2025-05-16 10:52:54,971 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Row Splitter 7:191
+2025-05-16 10:52:54,971 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "Row Splitter": No such data file: /home/joao/Desktop/ADI/ADI-24_25/KnimeModels/15maio/proj_adi_2121/Row Splitter (#191)/port_1/data.xml
+2025-05-16 10:52:54,971 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: Simple Regression Tree 7:157
+2025-05-16 10:52:54,971 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: Some node states were invalid
+2025-05-16 10:52:54,971 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: Linear Regression 7:158
+2025-05-16 10:52:54,971 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: Some node states were invalid
+2025-05-16 10:52:54,971 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: Random forest 7:179
+2025-05-16 10:52:54,971 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: Some node states were invalid
+2025-05-16 10:52:54,971 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: Gradient Boosted 7:222
+2025-05-16 10:52:54,971 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: Some node states were invalid
+2025-05-16 10:52:54,971 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: Neural Networks 7:214
+2025-05-16 10:52:54,971 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: Some node states were invalid
+2025-05-16 10:52:54,971 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: Random forest 7:130
+2025-05-16 10:52:54,971 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: Some node states were invalid
+2025-05-16 10:52:54,971 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: Linear Regression 7:128
+2025-05-16 10:52:54,972 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: Some node states were invalid
+2025-05-16 10:52:54,972 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: Simple Regression Tree 7:129
+2025-05-16 10:52:54,972 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: Some node states were invalid
+2025-05-16 10:52:54,972 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: State has changed from CONFIGURED to IDLE
+2025-05-16 10:53:08,439 : WARN  : main :  : Node : Box Plot : 7:202 : The selected dimension column "minMPG" does not exist in the table
+2025-05-16 10:53:09,181 : WARN  : main :  : Node : Box Plot : 7:202 : The selected dimension column "minMPG" does not exist in the table
+2025-05-16 10:54:34,136 : WARN  : KNIME-Worker-1-CSV Reader 7:4 :  : Node : Box Plot : 7:202 : The selected dimension column "minMPG" does not exist in the table
+2025-05-16 10:54:34,240 : WARN  : KNIME-Worker-1-String Manipulation (Multi Column) 7:14 :  : MultiColumnStringManipulationConfigurator : String Manipulation (Multi Column) : 7:14 : Evaluation of expression failed for row "Row0": java.lang.NullPointerException: Cannot invoke "String.length()" because "<parameter1>" is null
+2025-05-16 10:54:34,509 : WARN  : KNIME-Worker-2-String Manipulation 7:32 :  : ColumnCalculator : String Manipulation : 7:32 : Row "Row32" contains missing value in column "Fuel type" - returning missing (omitting further warnings)
+2025-05-16 10:54:34,569 : WARN  : KNIME-Worker-1-String Manipulation 7:100 :  : ColumnCalculator : String Manipulation : 7:100 : Row "Row32" contains missing value in column "Fuel type" - returning missing (omitting further warnings)
+2025-05-16 10:54:34,617 : WARN  : KNIME-Worker-1-String Manipulation 7:100 :  : Node : Box Plot : 7:202 : The selected dimension column "minMPG" does not exist in the table
+2025-05-16 10:54:34,683 : WARN  : KNIME-Worker-1-String Manipulation 7:9 :  : ColumnCalculator : String Manipulation : 7:9 : Row "Row4" contains missing value in column "Mileage" - returning missing (omitting further warnings)
+2025-05-16 10:54:34,825 : WARN  : KNIME-Worker-2-String Manipulation 7:223:88 :  : ColumnCalculator : String Manipulation : 7:223:88 : Row "Row5775" contains missing value in column "Engine" - returning missing (omitting further warnings)
+2025-05-16 10:54:34,918 : WARN  : KNIME-Worker-1-String Manipulation 7:223:138 :  : ColumnCalculator : String Manipulation : 7:223:138 : Row "Row5775" contains missing value in column "Engine" - returning missing (omitting further warnings)
+2025-05-16 10:54:34,997 : WARN  : KNIME-Worker-2-String Manipulation 7:223:140 :  : ColumnCalculator : String Manipulation : 7:223:140 : Row "Row5775" contains missing value in column "EngineConfig" - returning missing (omitting further warnings)
+2025-05-16 10:54:35,006 : WARN  : KNIME-Worker-2-String Manipulation 7:223:140 :  : Node : String Manipulation : 7:223:140 : Problems in 165 rows. First error: Evaluation of expression failed for row "Row66": Cannot invoke "String.length()" because "<parameter1>" is null
+2025-05-16 10:54:35,007 : WARN  : KNIME-Worker-2-String Manipulation 7:223:140 :  : Node : String Manipulation : 7:223:140 : Problems in 165 rows. First error: Evaluation of expression failed for row "Row66": Cannot invoke "String.length()" because "<parameter1>" is null
+Evaluation of expression failed for row "Row66": Cannot invoke "String.length()" because "<parameter1>" is null
+2025-05-16 10:54:35,016 : WARN  : KNIME-Worker-2-String Manipulation 7:223:140 :  : Node : Box Plot : 7:202 : The selected dimension column "minMPG" does not exist in the table
+2025-05-16 10:54:35,172 : WARN  : KNIME-Worker-1-String Manipulation 7:223:142 :  : ColumnCalculator : String Manipulation : 7:223:142 : Row "Row5775" contains missing value in column "Engine" - returning missing (omitting further warnings)
+2025-05-16 10:54:35,270 : WARN  : KNIME-Worker-2-String to Number 7:223:143 :  : Node : String to Number : 7:223:143 : Problems in 1486 rows, first error: "Ingenium 2L ..." in cell ["Row8", column "Valves", row 9] can not be transformed into a number
+2025-05-16 10:54:35,276 : WARN  : KNIME-Worker-2-String to Number 7:223:143 :  : Node : String to Number : 7:223:143 : Problems in 1486 rows, first error: "Ingenium 2L ..." in cell ["Row8", column "Valves", row 9] can not be transformed into a number
+ RowID  |   ..   | EngineConfig |     Valves    
+--------+--------+--------------+----------------
+ Row6   | ..     | V8           | 16            
+ Row7   | ..     | I4           | 16            
+ Row8   | ..     | I4           | Ingenium 2L...
+                                  ^^^^^^^^^^^^^^
+For input string: "Ingenium 2L I-4 gasoline direct injection, DOHC, variable valve"
+2025-05-16 10:54:35,284 : WARN  : KNIME-Worker-2-String to Number 7:223:143 :  : Node : Box Plot : 7:202 : The selected dimension column "minMPG" does not exist in the table
+2025-05-16 10:54:35,297 : WARN  : KNIME-Worker-1-String Manipulation 7:15 :  : ColumnCalculator : String Manipulation : 7:15 : Row "Row0" contains missing value in column "MPG" - returning missing (omitting further warnings)
+2025-05-16 10:54:35,369 : WARN  : KNIME-Worker-2-String Manipulation 7:16 :  : ColumnCalculator : String Manipulation : 7:16 : Row "Row0" contains missing value in column "MPG" - returning missing (omitting further warnings)
+2025-05-16 10:54:35,529 : WARN  : KNIME-Worker-1-Rule Engine 7:96 :  : Node : Box Plot : 7:202 : The selected dimension column "minMPG" does not exist in the table
+2025-05-16 10:54:35,564 : WARN  : KNIME-Worker-2-Rule Engine 7:97 :  : Node : Box Plot : 7:202 : The selected dimension column "minMPG" does not exist in the table
+2025-05-16 10:54:35,619 : WARN  : KNIME-Worker-1-String Manipulation 7:86 :  : ColumnCalculator : String Manipulation : 7:86 : Row "Row211" contains missing value in column "Drivetrain" - returning missing (omitting further warnings)
+2025-05-16 10:54:35,676 : WARN  : KNIME-Worker-1-String Manipulation 7:86 :  : Node : Box Plot : 7:202 : The selected dimension column "minMPG" does not exist in the table
+2025-05-16 10:54:35,726 : WARN  : KNIME-Worker-2-String to Number 7:17 :  : Node : Box Plot : 7:202 : The selected dimension column "minMPG" does not exist in the table
+2025-05-16 10:54:35,984 : WARN  : KNIME-Worker-2-Math Formula 7:127:111 :  : Node : Box Plot : 7:202 : The selected dimension column "minMPG" does not exist in the table
+2025-05-16 10:54:36,607 : WARN  : KNIME-Worker-2-Row Splitter 7:191 :  : Node : Box Plot : 7:90 : The selected dimension column "minMPG" does not exist in the table
+2025-05-16 10:54:36,609 : WARN  : KNIME-Worker-2-Row Splitter 7:191 :  : Node : Random Forest Learner (Regression) : 7:179:28 : 1 column(s) were ignored due to missing domain information: ["Transmission"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-05-16 10:54:36,611 : WARN  : KNIME-Worker-2-Row Splitter 7:191 :  : Node : Gradient Boosted Trees Learner (Regression) : 7:222:218 : 1 column(s) were ignored due to missing domain information: ["Transmission"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-05-16 10:54:36,616 : WARN  : KNIME-Worker-2-Row Splitter 7:191 :  : Node : Random Forest Learner (Regression) : 7:130:28 : 1 column(s) were ignored due to missing domain information: ["Transmission"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-05-16 10:54:36,771 : WARN  : KNIME-Worker-1-Min Max MPG Treatment 7:224 :  : Node : Box Plot : 7:90 : The selected dimension column "minMPG" does not exist in the table
+2025-05-16 10:54:36,776 : WARN  : KNIME-Worker-1-Min Max MPG Treatment 7:224 :  : Node : Random Forest Learner (Regression) : 7:179:28 : 1 column(s) were ignored due to missing domain information: ["Transmission"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-05-16 10:54:36,777 : WARN  : KNIME-Worker-1-Min Max MPG Treatment 7:224 :  : Node : Gradient Boosted Trees Learner (Regression) : 7:222:218 : 1 column(s) were ignored due to missing domain information: ["Transmission"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-05-16 10:54:36,781 : WARN  : KNIME-Worker-1-Min Max MPG Treatment 7:224 :  : Node : Random Forest Learner (Regression) : 7:130:28 : 1 column(s) were ignored due to missing domain information: ["Transmission"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-05-16 11:02:59,213 : WARN  : comm-pool-thread-6 :  : Node : GroupBy : 7:225 : No grouping column included. Aggregate complete table.
+2025-05-16 11:02:59,214 : WARN  : comm-pool-thread-6 :  : Node : GroupBy : 7:225 : No aggregation column defined
+2025-05-16 11:02:59,320 : WARN  : comm-pool-thread-6 :  : Node : GroupBy : 7:225 : Please select at least one group or aggregation column
+2025-05-16 11:07:42,579 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error captured hook ::  
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CPG1Nwkw.js; line: 87)
+2025-05-16 11:09:21,000 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 7:228 valid [7:4, 7:6, 7:8, 7:9, 7:14, 7:15, 7:16, 7:17, 7:18, 7:19, 7:21, 7:24, 7:25, 7:26, 7:32, 7:82, 7:85, 7:86, 7:90, 7:96, 7:97, 7:100, 7:107, 7:109, 7:112, 7:120, 7:121, 7:125, 7:126, 7:127, 7:128, 7:129, 7:130, 7:131, 7:136, 7:157, 7:158, 7:179, 7:182, 7:184, 7:186, 7:187, 7:188, 7:190, 7:191, 7:198, 7:201, 7:202, 7:203, 7:204, 7:214, 7:222, 7:223, 7:224, 7:225, 7:226, 7:227] (source: http://org.knime.ui.java/assets/index-CPG1Nwkw.js; line: 87)
+2025-05-16 11:09:21,001 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CPG1Nwkw.js; line: 87)
+2025-05-16 11:09:21,002 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 7:228 valid [7:4, 7:6, 7:8, 7:9, 7:14, 7:15, 7:16, 7:17, 7:18, 7:19, 7:21, 7:24, 7:25, 7:26, 7:32, 7:82, 7:85, 7:86, 7:90, 7:96, 7:97, 7:100, 7:107, 7:109, 7:112, 7:120, 7:121, 7:125, 7:126, 7:127, 7:128, 7:129, 7:130, 7:131, 7:136, 7:157, 7:158, 7:179, 7:182, 7:184, 7:186, 7:187, 7:188, 7:190, 7:191, 7:198, 7:201, 7:202, 7:203, 7:204, 7:214, 7:222, 7:223, 7:224, 7:225, 7:226, 7:227] (source: http://org.knime.ui.java/assets/index-CPG1Nwkw.js; line: 45)
+2025-05-16 11:09:51,352 : WARN  : comm-pool-thread-14 :  : Node : Box Plot : 7:90 : The selected dimension column "minMPG" does not exist in the table
+2025-05-16 11:09:51,358 : WARN  : comm-pool-thread-14 :  : Node : Random Forest Learner (Regression) : 7:179:28 : 1 column(s) were ignored due to missing domain information: ["Transmission"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-05-16 11:09:51,360 : WARN  : comm-pool-thread-14 :  : Node : Gradient Boosted Trees Learner (Regression) : 7:222:218 : 1 column(s) were ignored due to missing domain information: ["Transmission"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-05-16 11:09:51,364 : WARN  : comm-pool-thread-14 :  : Node : Random Forest Learner (Regression) : 7:130:28 : 1 column(s) were ignored due to missing domain information: ["Transmission"] -- change the node configuration or use a Domain Calculator node to fix it
+2025-05-16 11:10:10,384 : ERROR : main :  : SaveProjectCopy :  :  : No destion was picked
+2025-05-16 11:10:10,385 : ERROR : main :  : SaveProjectCopy :  :  : No valid destination could be picked
+2025-05-16 11:11:38,355 : WARN  : main :  : VMFileLocker :  :  : Directory '/home/joao/Desktop/ADI/ADI-24_25/KnimeModels/FeitoPeloJoao/proj_adi_2' does not exist (any more), cannot unlock it
+2025-05-16 11:11:38,358 : WARN  : main :  : VMFileLocker :  :  : Directory '/home/joao/Desktop/ADI/ADI-24_25/KnimeModels/9maio/proj_adi_212' does not exist (any more), cannot unlock it
